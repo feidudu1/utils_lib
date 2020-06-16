@@ -1,0 +1,17 @@
+{
+  "name": "utils_lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup-plugin-json": "^4.0.0"
+  },
+  "scripts": {
+    "start": "rollup --config rollup.config.dev.js",
+    "build": "rollup --config rollup.config.build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
