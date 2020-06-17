@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-16 10:10:47
- * @LastEditTime: 2020-06-17 20:00:26
+ * @LastEditTime: 2020-06-17 21:00:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fei_utils_lib/rollup.config.build.js
@@ -25,6 +25,13 @@ export default {
       format: "es",
     },
   ],
+  // globals: { react: "React", "react-dom": "ReactDOM" },
+  plugins: [
+    // resolve(),
+    babel({ babelHelpers: "bundled" }), // 必须放在commonjs前面，否则不能正确解析jsx
 
-  plugins: [commonjs(), babel({ babelHelpers: "bundled" }), json()],
+    commonjs({}),
+
+    json(),
+  ],
 };
