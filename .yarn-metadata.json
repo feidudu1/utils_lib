@@ -1,0 +1,32 @@
+{
+  "manifest": {
+    "name": "utils_lib",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/tool.cjs.js",
+    "module": "dist/tool.esm.js",
+    "browser": "dist/tool.umd.js",
+    "dependencies": {},
+    "devDependencies": {
+      "rollup-plugin-json": "^4.0.0"
+    },
+    "scripts": {
+      "start": "rollup --config rollup.config.dev.js",
+      "build": "rollup --config rollup.config.build.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {},
+    "license": "ISC",
+    "_registry": "npm",
+    "_loc": "/Users/feifei/Library/Caches/Yarn/v6/npm-utils-lib-1.0.0-1db19ced-d620-485b-8a4e-4d5dfea6f751-1592366042433/node_modules/utils_lib/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "type": "copy",
+    "registry": "npm",
+    "hash": "580840e3-9455-4623-bd28-5955fd23afb9-1592374704069",
+    "reference": "/Users/feifei/.nvm/versions/node/v13.12.0/lib/node_modules/utils_lib"
+  },
+  "registry": "npm",
+  "hash": "580840e3-9455-4623-bd28-5955fd23afb9-1592374704069"
+}

@@ -2,10 +2,22 @@
   "name": "utils_lib",
   "version": "1.0.0",
   "description": "",
-  "main": "bundle.js",
-  "dependencies": {},
+  "main": "dist/tool.cjs.js",
+  "module": "dist/tool.esm.js",
+  "browser": "dist/tool.umd.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.15",
+    "the-answer": "^1.0.0"
+  },
   "devDependencies": {
-    "rollup-plugin-json": "^4.0.0"
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "scripts": {
     "start": "rollup --config rollup.config.dev.js",
