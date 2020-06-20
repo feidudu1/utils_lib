@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "node"
+  },
+  // "rootDirs": ["src", ".storybook"],
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    // "**/*.spec.ts",
+    ".storybook",
+    "stories/**/*.stories.tsx",
+    "stories/**/*.stories.ts"
+  ]
+}
