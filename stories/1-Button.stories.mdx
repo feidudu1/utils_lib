@@ -1,0 +1,55 @@
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Description } from "@storybook/addon-docs/blocks";
+// import { Button } from "@storybook/react/demo";
+import * as stories from "./1-Button.stories.js";
+import Button from "../src/Button";
+import Sayhi from "../src/Sayhi";
+import readmeMarkdown from './index.md'
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
+import { addDecorator, addParameters } from "@storybook/react";
+
+<Meta title="MDX" component={Button} includeStories={[]}/>
+
+<Description markdown={readmeMarkdown} />
+
+# Button
+
+我自己写的 button 组件
+
+<div style={{ padding: '20px', backgroundColor: 'tomato' }}>
+  <h3>This is JSX</h3>
+  <Button name={'jsx button'}/>
+</div>
+
+<Preview>
+  {/* <Story name="button">
+    <Button name={"feifei"} onClick={action("clicked")} />
+  </Story> */}
+  <Story name="button">{stories.Text()}</Story>
+</Preview>
+
+# emoj
+
+<Preview>
+  <Story name="emoj">{stories.Emoji()}</Story>
+</Preview>
+
+# knobs
+
+<Preview>
+  <Story name="knobs">
+    <button disabled={boolean("disabled", false)}>
+    {text("label", "hello")}
+  </button>
+  </Story>
+</Preview>
+
+# sayhi
+<Preview>
+  <Story name="sayhi"><Sayhi name="hi"/></Story>
+</Preview>
+
+
+# 在 mds 中添加装饰器和参数
+
+//:todo https://storybook.js.org/docs/formats/mdx-syntax
